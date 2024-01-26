@@ -1,10 +1,10 @@
-Find the ten's complement of 6,603,312.
-Find the ten's complement of 1,499,644.
-Find the ten's complement of 14,404,170.
-Find the ten's complement of 13,061,190.
-Find the ten's complement of 1,217,007.
-Find the ten's complement of 14,016,072.
-Find the ten's complement of 7,028,716.
-Find the ten's complement of 11,053,948.
-Find the ten's complement of 9,940,313.
-Find the ten's complement of 2,246,519.
+Find the eight's complement of 046 777 250.
+Find the eight's complement of 056 400 442.
+Find the eight's complement of 015 467 752.
+Find the eight's complement of 014 710 150.
+Find the eight's complement of 053 511 660.
+Find the eight's complement of 070 367 006.
+Find the eight's complement of 064 261 675.
+Find the eight's complement of 030 362 740.
+Find the eight's complement of 020 226 460.
+Find the eight's complement of 057 240 530.
