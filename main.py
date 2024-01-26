@@ -1,5 +1,7 @@
 import re
 
+complement = 10
+
 with open('input.txt', 'r') as f:
     r = f.read()
     new_list = []
@@ -17,7 +19,8 @@ with open('input.txt', 'r') as f:
     for number in new_list:
         add_num = ""
         for char in list(number):
-            add_num += ' '+str(9-int(char))
+            if complement == 9 or complement == 10:
+                add_num += ' '+str((9)-int(char))
 
         add_num = add_num[:-1] + str(1+int(add_num[-1]))
 
@@ -33,7 +36,9 @@ with open('input.txt', 'r') as f:
             thing = thing.replace(' ', '')
             if thing:
                 if int(thing.strip()) > 9:
-                    return_list[num_index] =' '+cool_thing[:thing_index-2]+ str(int(cool_thing[thing_index-1])+1)  + '0'
+                    print(cool_thing)
+                    return_list[num_index] =' '+"".join(cool_thing.split(' ')[:thing_index-1])+ str(int(cool_thing.split(' ')[thing_index-1])+1)  + '0'
+                    print(return_list[num_index])
             thing_index += 1
         num_index += 1
     for thing in return_list:

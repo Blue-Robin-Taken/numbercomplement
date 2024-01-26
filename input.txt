@@ -1,1 +1,10 @@
-Find the eight's complement of 006 565 340. Find the eight's complement of 040 572 676. Find the eight's complement of 002 043 143. Find the eight's complement of 052 541 746. Find the eight's complement of 005 170 702. Find the eight's complement of 006 414 012. Find the eight's complement of 011 017 230. Find the eight's complement of 072 746 266. Find the eight's complement of 063 457 722. Find the eight's complement of 056 705 006.
+Find the ten's complement of 6,603,312.
+Find the ten's complement of 1,499,644.
+Find the ten's complement of 14,404,170.
+Find the ten's complement of 13,061,190.
+Find the ten's complement of 1,217,007.
+Find the ten's complement of 14,016,072.
+Find the ten's complement of 7,028,716.
+Find the ten's complement of 11,053,948.
+Find the ten's complement of 9,940,313.
+Find the ten's complement of 2,246,519.
