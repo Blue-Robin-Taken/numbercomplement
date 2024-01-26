@@ -1,8 +1,9 @@
 global s
-with open('main.txt', 'r') as f:
+with open('main.py', 'r') as f:
+    lines = []
     s = f.read()
-    s.rstrip()
-    print(f.read())
-with open('main.txt', 'w') as w:
-
+    for line in s.split('\n'):
+        lines.append(line.rstrip() + "\n")
+    s = "".join(lines)
+with open('main.py', 'w') as w:
     w.write(s)

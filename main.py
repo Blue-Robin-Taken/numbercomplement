@@ -1,5 +1,5 @@
-import re                                                                                                                                                                                                          
-                                                                                                                                                                                                                   
+import re
+
 with open('input.txt', 'r') as f:
     r = f.read()
     new_list = []
@@ -32,10 +32,10 @@ with open('input.txt', 'r') as f:
         for thing in cool_thing.strip().split(' '):
             thing = thing.replace(' ', '')
             if thing:
-                if int(thing.strip()) > 9:                                                                                                                                                                         
-                    return_list[num_index] =' '+cool_thing[:thing_index-2]+ str(int(cool_thing[thing_index-1])+1)  + '0'                                                                                           
-            thing_index += 1                                                                                                                                                                                       
-        num_index += 1                                                                                                                                                                                             
-    for thing in return_list:                                                                                                                                                                                      
-        print("{:,}".format(int(thing.replace(' ', ''))))                                                                                                                                                          
-    print(return_list) 
+                if int(thing.strip()) > 9:
+                    return_list[num_index] =' '+cool_thing[:thing_index-2]+ str(int(cool_thing[thing_index-1])+1)  + '0'
+            thing_index += 1
+        num_index += 1
+    for thing in return_list:
+        print("{:,}".format(int(thing.replace(' ', ''))))
+    print(return_list)
