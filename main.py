@@ -1,12 +1,33 @@
 import re
 
-complement = 8
+complement = 15
+ALPHABET = {'a':10, 'b':11,'c':12,'d':13,'e':14,'f':15}
+
+def hex_switch_space(n):
+    """
+    Function to change hex alphabet codes to 
+    normal numbers with spaces separating each number.
+    This is used for the below processes for calculating
+    the complement of the number.
+    """
+    r_list = []  # return list
+    for char in n:
+        if char.lower in ALPHABET.keys():
+            r_list += " " + str(ALPHABET[char])
+
+
 
 with open('input.txt', 'r') as f:
     r = f.read()
     new_list = []
     for line in r.split('.'):
-        new_list.append(re.sub("[^0-9]", "", line))
+        if complement < 15:  # only works for things that don't have letters
+            new_list.append(re.sub("[^0-9]", "", line))
+        else:
+            line_list = []  # list of things to replace line
+            for char in line:
+
+            new_list.append()
 
     new_list_ = []
     for line in new_list:
@@ -18,19 +39,24 @@ with open('input.txt', 'r') as f:
     return_list = []
     for number in new_list:
         add_num = ""
+        begin_count = False
         for char in list(number):
             if complement == 9 or complement == 10:
                 add_num += ' '+str((9)-int(char))
             if complement == 8 or complement == 7:
-                if 7 - int(char) >= 0:
-                    add_num += str((7)-int(char))
+                if begin_count or int(char) > 0:
+                    if 7 - int(char) >= 0:
+                        begin_count = True
+                        add_num += ' '+str((7)-int(char))
+                    else:
+                        add_num += " 0"
                 else:
-                    add_num += "0"
+                    add_num += " 0"
+            print(add_num)
         if complement == 10:
             add_num = add_num[:-1] + str(1+int(add_num[-1]))
         if complement == 8:
             add_num = add_num[:-1] + str(1+int(add_num[-1]))
-
 
         return_list.append(add_num)
 
@@ -54,7 +80,10 @@ with open('input.txt', 'r') as f:
             print("{:,}".format(int(thing.replace(' ', ''))))
     if complement == 8 or complement == 7:
         for thing in return_list:
-            a= thing.strip()
-            print(' '.join([a[i:i+3] for i in range(0, len(a), 3)]))
+            a= thing.replace(' ', '')
+            a = [a[i:i+3] for i in range(0, len(a), 3)]
+            if a[0] == "000":
+                a = a[1:]
+            print(' '.join(a))
             # https://stackoverflow.com/questions/15254195/python-how-to-add-space-on-each-3-characters
     print(return_list)

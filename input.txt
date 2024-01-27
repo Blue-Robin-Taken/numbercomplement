@@ -1,10 +1,10 @@
-Find the eight's complement of 046 777 250.
-Find the eight's complement of 056 400 442.
-Find the eight's complement of 015 467 752.
-Find the eight's complement of 014 710 150.
-Find the eight's complement of 053 511 660.
-Find the eight's complement of 070 367 006.
-Find the eight's complement of 064 261 675.
-Find the eight's complement of 030 362 740.
-Find the eight's complement of 020 226 460.
-Find the eight's complement of 057 240 530.
+Find the fifteen's complement of de 7a 90 1a.
+Find the fifteen's complement of 85 23 85 71.
+Find the fifteen's complement of 1f 2e a0 d6.
+Find the fifteen's complement of d9 2f 13 cf.
+Find the fifteen's complement of 77 aa bc 10.
+Find the fifteen's complement of 37 b5 26 03.
+Find the fifteen's complement of 8e bb 20 10.
+Find the fifteen's complement of 17 95 14 65.
+Find the fifteen's complement of 4d 24 15 9b.
+Find the fifteen's complement of a1 38 a7 7c.
